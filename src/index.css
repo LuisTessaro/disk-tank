@@ -1,0 +1,26 @@
+.chats {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.chat {
+  position: absolute;
+  top: 0;
+}
+
+.bg-primary {
+  background-color: #3D0052;
+}
+
+.chat-container {}
+
+.min-chat-height {
+  min-height: 250px;
+  overflow-y: scroll;
+}
+
+.border-primary {
+  border: 1px solid #3D0052;
+  color: #3D0052;
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 .chats {
   position: absolute;
   bottom: 0;
@@ -9,11 +10,14 @@
   top: 0;
 }
 
+.top-left {
+  top: 0;
+  left: 0;
+}
+
 .bg-primary {
   background-color: #3D0052;
 }
-
-.chat-container {}
 
 .min-chat-height {
   min-height: 250px;
@@ -23,4 +27,49 @@
 .border-primary {
   border: 1px solid #3D0052;
   color: #3D0052;
+}
+
+.chat-container {
+  min-width: 400px;
+}
+
+@media (max-width: 600px) {
+  .chat-container {
+    min-width: 100%;
+  }
+}
+
+.logo {
+  font-family: Rubik Mono One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(40%);
+  z-index: -100;
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.battlenet-color {
+  background-color: #0566B0;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header-menu-hidden {
+    display: none;
+  }
 }

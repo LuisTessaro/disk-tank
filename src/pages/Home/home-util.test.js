@@ -16,11 +16,3 @@ test('text must be under 20 characters falsy', () => {
 test('text must be under 20 characters', () => {
   expect(validadeRoomName('RoomName123')).toStrictEqual({ status: true })
 })
-
-test('text must not contain special characters or numbers falsy', () => {
-  expect(validadeRoomName('test room')).toStrictEqual({ status: false, errorMessage: 'room cant have special characters like spaces or @' })
-})
-
-test('text must not contain special characters or numbers', () => {
-  expect(validadeRoomName('testRoom')).toStrictEqual({ status: true })
-})

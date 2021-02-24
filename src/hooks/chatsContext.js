@@ -3,18 +3,18 @@ import React, { useState, createContext } from 'react'
 const ChatsContext = createContext()
 
 export const ChatsProvider = props => {
-  const [data, _setData] = useState()
+  const [chats, _setChats] = useState()
 
-  const setData = data => _setData(data)
+  const setChats = data => setChats(data)
 
 
   return (
     <ChatsContext.Provider
       value={{
         // MARK: Data
-        data,
+        chats,
         // MARK: Functions
-        setData
+        setChats
       }}
       {...props}
     />
